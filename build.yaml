@@ -25,6 +25,6 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
   - board: seeeduino_xiao_ble
-    shield: klotz_dongle
+    shield: klotz_dongle dongle_screen
   - board: seeeduino_xiao_ble
     shield: settings_reset
