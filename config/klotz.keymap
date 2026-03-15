@@ -71,6 +71,11 @@
             bindings = <&kp LC(X)>;
             key-positions = <21 23>;
         };
+
+        alt-tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <11 31>;
+        };
     };
 
     macros {
@@ -148,10 +153,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp Q       &kp W       &kp F        &kp P         &kp G        &kp J      &kp L            &kp U        &kp Y       &kp SEMI
-&HM LGUI A  &HM LALT R  &HM LCTRL S  &HM LSHFT T   &kp D        &kp H      &HM RSHFT N      &HM RCTRL E  &HM RALT I  &HM RGUI O
-&kp Z       &kp X       &kp C        &kp V         &kp B        &kp K      &kp M            &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt 1 ESCAPE  &lt 2 SPACE  &lt 4 RET  &lt 3 BACKSPACE
+&kp Q       &kp W       &kp F        &kp P        &kp G         &kp J      &kp L            &kp U        &kp Y       &kp SEMI
+&HM LGUI A  &HM LALT R  &HM LCTRL S  &HM LSHFT T  &kp D         &kp H      &HM RSHFT N      &HM RCTRL E  &HM RALT I  &HM RGUI O
+&kp Z       &kp X       &kp C        &kp V        &kp B         &kp K      &kp M            &kp COMMA    &kp DOT     &kp FSLH
+                                     &lt 1 SPACE  &lt 2 ESCAPE  &lt 4 RET  &lt 3 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -175,7 +180,7 @@
 
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp CAPSLOCK  &trans        &trans        &trans        &kp LBKT  &kp RBKT      &trans        &trans        &kp MINUS     &kp EQUAL
+&kp CAPSLOCK  &kp GRAVE     &trans        &kp MINUS     &kp LBKT  &kp RBKT      &kp EQUAL     &trans        &kp MINUS     &kp SINGLE_QUOTE
 &kp DEL       &kp PG_UP     &trans        &kp PG_DN     &kp LPAR  &kp RPAR      &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_MULTIPLY
                                           &trans        &trans    &trans        &kp DEL
             >;
@@ -226,10 +231,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT  &kp CARET     &kp AMPS        &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp RA(Q)    &trans       &kp RA(S)  &trans    &trans     &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)    &kp RA(N4)            &kp RA(P)
-&kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV    &kp C_NEXT            &kp BSLH
-                                     &gif      &none      &trans        &kp C_PP
+&kp EXCL     &kp AT       &kp HASH   &kp DLLR        &kp PRCNT       &kp CARET        &kp AMPS      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp RA(Q)    &kp TILDE    &kp RA(S)  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS      &kp RA(N5)    &kp MINUS             &kp DOUBLE_QUOTES
+&kp RA(F18)  &kp RA(F19)  &trans     &trans          &trans          &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT            &kp BSLH
+                                     &gif            &kp TAB         &trans           &kp C_PP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
