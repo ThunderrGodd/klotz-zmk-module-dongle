@@ -76,6 +76,16 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <11 31>;
         };
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <8 7>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <9 8>;
+        };
     };
 
     macros {
@@ -153,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-&kp Q       &kp W       &kp F        &kp P        &kp G         &kp J      &kp L            &kp U        &kp Y       &kp SEMI
-&HM LGUI A  &HM LALT R  &HM LCTRL S  &HM LSHFT T  &kp D         &kp H      &HM RSHFT N      &HM RCTRL E  &HM RALT I  &HM RGUI O
-&kp Z       &kp X       &kp C        &kp V        &kp B         &kp K      &kp M            &kp COMMA    &kp DOT     &kp FSLH
-                                     &lt 1 SPACE  &lt 2 ESCAPE  &lt 4 RET  &lt 3 BACKSPACE
+&kp Q       &kp W       &kp F        &kp P        &kp G      &kp J      &kp L            &kp U        &kp Y       &kp SEMI
+&HM LGUI A  &HM LALT R  &HM LCTRL S  &HM LSHFT T  &kp D      &kp H      &HM RSHFT N      &HM RCTRL E  &HM RALT I  &HM RGUI O
+&kp Z       &kp X       &kp C        &kp V        &kp B      &kp K      &kp M            &kp COMMA    &kp DOT     &kp FSLH
+                                     &lt 1 SPACE  &lt 2 TAB  &lt 4 RET  &lt 3 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -285,6 +295,15 @@
 &ext_power EP_TOG  &kp LS(LEFT)  &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &trans  &trans  &trans  &trans  &trans
 &kp J              &kp LS(C)     &kp LC(F16)   &kp LS(V)     &kp LC(F15)   &trans  &trans  &trans  &trans  &trans
                                                &kp LC(F12)   &kp LC(F11)   &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans
             >;
         };
     };
